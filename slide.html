@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>slide</title>
+        <link rel="stylesheet" href="slide.css">
+    </head>
+    <body>
+        <div class=main-slide>
+            <!-- 图片的总数 data-imgs，当前显示的图片 data-active -->
+            <div class="bin-slide" data-imgs="3" data-active="0">
+                <img id="id-binimage-0" class="bin-slide-image bin-active" src="slideimages/1.jpg" alt="">
+                <img id="id-binimage-1" class="bin-slide-image" src="slideimages/2.jpg" alt="">
+                <img id="id-binimage-2" class="bin-slide-image" src="slideimages/3.jpg" alt="">
+                <!-- 用 &lt; 表示 <, &gt; 表示 > -->
+                <button class="bin-slide-button bin-left bin-vertical-center" data-set="-1">&lt;</button>
+                <button class="bin-slide-button bin-right bin-vertical-center" data-set="1">&gt;</button>
+                <div class="bin-slide-indicators">
+                    <div id="id-indi-0" class="bin-slide-indi bin-white" data-index="0"></div>
+                    <div id="id-indi-1" class="bin-slide-indi" data-index="1"></div>
+                    <div id="id-indi-2" class="bin-slide-indi" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+        <script src="mineFunction.js"></script>
+        <script src="slide.js"></script>
+    </body>
+</html>

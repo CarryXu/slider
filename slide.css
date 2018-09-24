@@ -1,0 +1,54 @@
+/* 轮播图 css*/
+
+.bin-slide {
+    position: relative;
+    width: 580px;
+}
+.bin-slide-image {
+    display: none;
+}
+.bin-active {
+    display: inline-block;
+}
+.bin-slide-button {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    color: #fff;
+    background: #000;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+}
+.bin-slide-button:focus {
+    outline: none;
+}
+.bin-slide-button.bin-left {
+    left: 0;
+}
+.bin-slide-button.bin-right {
+    right: 0;
+}
+.bin-vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bin-slide-indicators {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.bin-slide-indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6E6E6E;
+    cursor: pointer;
+}
+.bin-white {
+    background: #D8D8D8;
+}
